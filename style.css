@@ -52,12 +52,20 @@ padding: 5rem 0rem}
     flex-direction: column;
     align-items: center;gap: 1rem;
 }
-.socials div {
+.socials button {
     background-color: var(--Grey);
     padding: 1rem;
     width: 90%;
     text-align: center;
     border-radius: 5px;
+    cursor: pointer;
+    border: transparent;
+    color: var(--White);
+    font-weight: bold;
+}
+button:hover {
+    background-color: var(--Green);
+    color: var(--OffBlack);
 }
 
 /* RESPONSIVENESS */
