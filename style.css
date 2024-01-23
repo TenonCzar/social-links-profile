@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+  --Green: hsl(75, 94%, 57%);
+}
+
+body {
+  background-color: var(--OffBlack);
+  color: var(--White);
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+
+padding: 5rem 0rem}
+
+.card {
+  background-color: var(--DarkGrey);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-self: center;
+  border-radius: 10px;
+}
+.person {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100px;
+}
+.country {
+    color: var(--Green);
+    margin-top: -1rem;
+}
+.name {
+    font-size: 25px;
+}
+
+.socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;gap: 1rem;
+}
+.socials div {
+    background-color: var(--Grey);
+    padding: 1rem;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (min-width: 600px){
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .card {
+        max-width: 30rem;
+    }
+}
